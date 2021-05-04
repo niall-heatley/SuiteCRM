@@ -39,6 +39,7 @@ array (
           'panelDefault' => 'expanded',
         ),
       ),
+      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
@@ -69,32 +70,6 @@ array (
           array (
             'name' => 'total_cost_gbp',
             'label' => 'LBL_TOTAL_COST_GBP',
-          ),
-        ),
-        3 => 
-        array (
-          0 => 
-          array (
-            'name' => 'total_cost_aud',
-            'label' => 'LBL_TOTAL_COST_AUD',
-          ),
-          1 => 
-          array (
-            'name' => 'total_cost_eur',
-            'label' => 'LBL_TOTAL_COST_EUR',
-          ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'total_cost_nzd',
-            'label' => 'LBL_TOTAL_COST_NZD',
-          ),
-          1 => 
-          array (
-            'name' => 'total_cost_usd',
-            'label' => 'LBL_TOTAL_COST_USD',
           ),
         ),
       ),
