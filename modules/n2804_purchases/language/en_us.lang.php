@@ -80,4 +80,7 @@ $mod_strings = array (
   'LBL_TOTAL_COST_EUR' => 'Total Cost (EUR)',
   'LBL_TOTAL_COST_AUD' => 'Total Cost (AUD)',
   'LBL_TOTAL_COST_NZD' => 'Total Cost (NZD)',
+  'LBL_EDITVIEW_PANEL1' => 'New Panel 1',
+  'LBL_EDITVIEW_PANEL2' => 'New Panel 2',
+  'LBL_QUICKCREATE_PANEL1' => 'New Panel 1',
 );

@@ -122,7 +122,7 @@ $dictionary['n2804_purchases'] = array(
   ),
   'quantity' => 
   array (
-    'required' => true,
+    'required' => false,
     'name' => 'quantity',
     'vname' => 'LBL_QUANTITY',
     'type' => 'int',
@@ -176,7 +176,7 @@ $dictionary['n2804_purchases'] = array(
   ),
   'total_cost_usd' => 
   array (
-    'required' => true,
+    'required' => false,
     'name' => 'total_cost_usd',
     'vname' => 'LBL_TOTAL_COST_USD',
     'type' => 'float',
@@ -199,7 +199,7 @@ $dictionary['n2804_purchases'] = array(
   ),
   'total_cost_eur' => 
   array (
-    'required' => true,
+    'required' => false,
     'name' => 'total_cost_eur',
     'vname' => 'LBL_TOTAL_COST_EUR',
     'type' => 'float',
@@ -222,7 +222,7 @@ $dictionary['n2804_purchases'] = array(
   ),
   'total_cost_aud' => 
   array (
-    'required' => true,
+    'required' => false,
     'name' => 'total_cost_aud',
     'vname' => 'LBL_TOTAL_COST_AUD',
     'type' => 'float',
@@ -245,7 +245,7 @@ $dictionary['n2804_purchases'] = array(
   ),
   'total_cost_nzd' => 
   array (
-    'required' => true,
+    'required' => false,
     'name' => 'total_cost_nzd',
     'vname' => 'LBL_TOTAL_COST_NZD',
     'type' => 'float',
