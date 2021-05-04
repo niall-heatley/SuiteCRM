@@ -122,7 +122,7 @@ $dictionary['n2804_purchases'] = array(
   ),
   'quantity' => 
   array (
-    'required' => false,
+    'required' => true,
     'name' => 'quantity',
     'vname' => 'LBL_QUANTITY',
     'type' => 'int',
@@ -134,7 +134,7 @@ $dictionary['n2804_purchases'] = array(
     'duplicate_merge' => 'disabled',
     'duplicate_merge_dom_value' => '0',
     'audited' => false,
-    'inline_edit' => '',
+    'inline_edit' => true,
     'reportable' => true,
     'unified_search' => false,
     'merge_filter' => 'disabled',
