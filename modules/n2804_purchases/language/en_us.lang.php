@@ -5,7 +5,7 @@
  * SugarCRM, Inc. Copyright (C) 2004-2013 SugarCRM Inc.
  *
  * SuiteCRM is an extension to SugarCRM Community Edition developed by SalesAgility Ltd.
- * Copyright (C) 2011 - 2020 SalesAgility Ltd.
+ * Copyright (C) 2011 - 2018 SalesAgility Ltd.
  *
  * This program is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Affero General Public License version 3 as published by the
@@ -37,17 +37,49 @@
  * reasonably feasible for technical reasons, the Appropriate Legal Notices must
  * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
-
-if (!defined('sugarEntry')) {
-    define('sugarEntry', true);
-}
-
-include 'custom/connection.php';
-include 'include/MVC/preDispatch.php';
-$startTime = microtime(true);
-require_once 'include/entryPoint.php';
-ob_start();
-require_once 'include/MVC/SugarApplication.php';
-$app = new SugarApplication();
-$app->startSession();
-$app->execute();
+$mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
+  'LBL_ASSIGNED_TO_NAME' => 'Assigned to',
+  'LBL_SECURITYGROUPS' => 'Security Groups',
+  'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
+  'LBL_ID' => 'ID',
+  'LBL_DATE_ENTERED' => 'Entry Date',
+  'LBL_DATE_MODIFIED' => 'Date Modified',
+  'LBL_MODIFIED' => 'Modified By',
+  'LBL_MODIFIED_NAME' => 'Modified By Name',
+  'LBL_CREATED' => 'Created By',
+  'LBL_DESCRIPTION' => 'Description',
+  'LBL_DELETED' => 'Deleted',
+  'LBL_NAME' => 'Product',
+  'LBL_CREATED_USER' => 'Created by User',
+  'LBL_MODIFIED_USER' => 'Modified by User',
+  'LBL_LIST_NAME' => 'Name',
+  'LBL_EDIT_BUTTON' => 'Edit',
+  'LBL_REMOVE' => 'Remove',
+  'LBL_ASCENDING' => 'Ascending',
+  'LBL_DESCENDING' => 'Descending',
+  'LBL_OPT_IN' => 'Opt In',
+  'LBL_OPT_IN_PENDING_EMAIL_NOT_SENT' => 'Pending Confirm opt in, Confirm opt in not sent',
+  'LBL_OPT_IN_PENDING_EMAIL_SENT' => 'Pending Confirm opt in, Confirm opt in sent',
+  'LBL_OPT_IN_CONFIRMED' => 'Opted in',
+  'LBL_LIST_FORM_TITLE' => 'Purchases List',
+  'LBL_MODULE_NAME' => 'Purchases',
+  'LBL_MODULE_TITLE' => 'Purchases',
+  'LBL_HOMEPAGE_TITLE' => 'My Purchases',
+  'LNK_NEW_RECORD' => 'Create Purchases',
+  'LNK_LIST' => 'View Purchases',
+  'LNK_IMPORT_N2804_PURCHASES' => 'Import Purchases',
+  'LBL_SEARCH_FORM_TITLE' => 'Search Purchases',
+  'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
+  'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
+  'LBL_N2804_PURCHASES_SUBPANEL_TITLE' => 'Purchases',
+  'LBL_NEW_FORM_TITLE' => 'New Purchases',
+  'LBL_QUANTITY' => 'Quantity',
+  'LBL_TOTAL_COST_GBP' => 'Total Cost (GBP)',
+  'LBL_TOTAL_COST_USD' => 'Total Cost (USD)',
+  'LBL_TOTAL_COST_EUR' => 'Total Cost (EUR)',
+  'LBL_TOTAL_COST_AUD' => 'Total Cost (AUD)',
+  'LBL_TOTAL_COST_NZD' => 'Total Cost (NZD)',
+  'LBL_DATE_OF_PURCHASE' => 'Date of purchase',
+  'LBL_PURCHASE_DATE' => 'Date of Purchase',
+);
